@@ -45,7 +45,7 @@ public class LoginFragment extends BaseMvpFragment<MainContract.Presenter> imple
 
     @Override
     protected void initViewOrData(View rootView) {
-//           new DialogFragment().show(getChildFragmentManager(),"sds");
+           new DialogFragment().show(getChildFragmentManager(),"sds");
         Logger.d("手机信息"+ DeviceUtils.getDeviceInfo(getActivity().getApplicationContext()));
     }
 
