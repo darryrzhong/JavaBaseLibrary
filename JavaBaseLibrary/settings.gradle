@@ -1,0 +1,2 @@
+include ':app', ':corelibrary'
+rootProject.name='JavaBaseLibrary'

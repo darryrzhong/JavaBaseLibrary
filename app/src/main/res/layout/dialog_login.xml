@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        >
+        <TextView
+            android:text="人脸采集教程"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/sdv_face_gif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="248dp"/>
+
+    <ListView
+        android:layout_marginTop="24dp"
+        android:id="@+id/rv_infos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="27dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/bt_go_face"
+        android:textSize="14sp"
+        android:text=""
+        android:layout_width="135dp"
+        android:layout_height="32dp"/>
+
+</LinearLayout>
