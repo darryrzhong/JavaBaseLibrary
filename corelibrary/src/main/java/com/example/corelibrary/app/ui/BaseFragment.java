@@ -23,7 +23,6 @@ public abstract class BaseFragment extends LazyFragment{
     }
 
 
-
     @Override
     protected void onFragmentResume() {
         super.onFragmentResume();

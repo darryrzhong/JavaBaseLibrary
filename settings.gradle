@@ -1,2 +1,2 @@
-include ':app', ':corelibrary', ':crashlibrary'
+include ':app', ':corelibrary', ':crashlibrary','ipc'
 rootProject.name='JavaBaseLibrary'
