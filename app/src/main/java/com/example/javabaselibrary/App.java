@@ -9,6 +9,7 @@ import org.json.JSONObject;
 import com.example.corelibrary.app.context.IAppConfig;
 import com.example.corelibrary.app.context.IApplication;
 import com.example.corelibrary.app.context.ObjectFactory;
+import com.example.corelibrary.app.ui.BaseApplication;
 import com.example.corelibrary.db.mmkv.MmkvHelper;
 import com.example.corelibrary.utils.DeviceUtils;
 import com.orhanobut.logger.AndroidLogAdapter;
@@ -31,11 +32,10 @@ import android.os.Looper;
  * @author darryrzhong
  * @since 2019/12/16 13:24
  */
-public class App extends Application {
+public class App extends BaseApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Logger.addLogAdapter(new AndroidLogAdapter());
         Recovery.getInstance()
                 .debug(true)
                 .showDebugInfo(true)
@@ -52,6 +52,7 @@ public class App extends Application {
                 // .silent(true,Recovery.SilentMode.RECOVER_ACTIVITY_STACK)
                 // .skip(HomeActivity.class)
                 .init(this);
+
         ObjectFactory.setApplication(new IApplication() {
             @Override
             public Context getApplicationContext() {
